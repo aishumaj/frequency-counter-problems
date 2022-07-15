@@ -1,3 +1,4 @@
+"use strict";
 /**Creates an object containing a count of each distinct element from an argument */
 function getFrequencyCounter(items) {
   const freqs = {};
