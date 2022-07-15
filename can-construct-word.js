@@ -1,15 +1,5 @@
 "use strict";
-/**Creates an object containing a count of each distinct element from an argument */
-function getFrequencyCounter(items) {
-  const freqs = {};
 
-  for (const item of items) {
-    const curr = freqs[item] || 0;
-    freqs[item] = curr + 1;
-  }
-
-  return freqs;
-}
 /** Function confirms if the characters in a word are also contained in a
  * separate string of letters.
 */
@@ -31,4 +21,16 @@ function canConstructWord(word, letters) {
     }
   }
   return true;
+}
+
+/**Creates an object containing a count of each distinct element from an argument */
+function getFrequencyCounter(items) {
+  const freqs = {};
+
+  for (const item of items) {
+    const curr = freqs[item] || 0;
+    freqs[item] = curr + 1;
+  }
+
+  return freqs;
 }
