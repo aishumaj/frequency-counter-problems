@@ -1,11 +1,7 @@
 "use strict";
-/**Function takes two numbers and returns the average of the two numbers */
-function findAvg(a, b) {
-  return (a + b) / 2;
-}
 
 
-/**Confirms if a sorted array of numbers contains two values that have an
+/**Returns true if a sorted array of numbers contains two values that have an
  * average equal to an indicated desired average; returns false if no such pair
  * exists.*/
 function averagePair(nums, targetAvg) {
@@ -28,3 +24,7 @@ function averagePair(nums, targetAvg) {
   return false;
 }
 
+/**Function takes two numbers and returns the average of the two numbers */
+function findAvg(a, b) {
+  return (a + b) / 2;
+}
